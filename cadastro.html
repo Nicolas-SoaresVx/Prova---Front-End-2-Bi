@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Enem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1><strong>Cadastro - ENEM</strong></h1></header>
+
+    <div class="container">
+        <h2 class="titulo">Cadastro de Inscrição</h2>
+   
+        <div class="campo-cadastro">
+            <label for="nome-completo">Nome completo</label>
+            <input type="text" id="nome-completo" placeholder="Digite seu nome completo" required>
+        </div>
+    
+        <div class="campo-cadastro">
+            <label for="email-cadastro">Email</label>
+            <input type="email" id="email-cadastro" placeholder="exemplo@gmail.com" required>
+        </div>
+    
+        <div class="campo-cadastro">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" placeholder="(00) 00000-0000" required>
+        </div>
+    
+        <div class="campo-cadastro">
+            <label for="nome-mae">Nome da mãe</label>
+            <input type="text" id="nome-mae" placeholder="Nome completo da mãe" required>
+        </div>
+    
+        <div class="campo-cadastro">
+            <label for="nome-pai">Nome do pai</label>
+            <input type="text" id="nome-pai" placeholder="Nome completo do pai (opcional)">
+        </div>
+    
+        <div class="campo-cadastro">
+            <label for="endereco">Endereço (rua/avenida)</label>
+            <input type="text" id="endereco" placeholder="Ex: Rua das Flores" required>
+        </div>
+   
+        <div class="campo-cadastro">
+            <label for="numero">Número</label>
+            <input type="text" id="numero" placeholder="Ex: 123" required>
+        </div>
+    
+        <div class="campo-cadastro">
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" placeholder="Digite sua cidade" required>
+        </div>
+    
+        <div class="campo-cadastro">
+            <label for="estado">Estado</label>
+            <input type="text" id="estado" placeholder="Digite seu estado" required>
+        </div>
+    
+        <div class="campo-cadastro">
+            <label for="pais">País</label>
+            <input type="text" id="pais" placeholder="Ex: Brasil" value="Brasil" required>
+        </div>
+    
+        <div class="campo-cadastro">
+            <label for="situacao-ensino">Situação do ensino médio</label>
+            <select id="situacao-ensino" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="concluido">Já concluí</option>
+                <option value="cursando">Estou cursando</option>
+            </select>
+        </div>
+    
+        <div class="campo-cadastro">
+            <label for="tipo-escola">Tipo de escola</label>
+            <select id="tipo-escola" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="publica">Pública</option>
+                <option value="privada">Privada</option>
+            </select>
+        </div>
+    
+        <div class="campo-cadastro">
+            <label for="senha-cadastro">Senha</label>
+            <input type="password" id="senha-cadastro" placeholder="Crie uma senha" required>
+        </div>
+    
+        <div class="campo-cadastro">
+            <label for="confirma-senha">Confirmar senha</label>
+            <input type="password" id="confirma-senha" placeholder="Repita a senha" required>
+        </div>
+    
+        <button class="btn-salvar" onclick="salvarInscricao()">Salvar Inscrição</button>
+        <button class="btn-voltar" onclick="history.back()">Voltar</button>
+    
+        <div id="error-cadastro" class="error-message"><p></p></div>
+    </div>    
+
+    <footer class="rodape">
+        <p><strong>© 2026 Nicolas Soares da Costa, aluno do 3ºDS da escola Clodoveu Barbosa</strong></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

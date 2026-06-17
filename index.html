@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova - Enem</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+    <header><h1><strong>Portal do Candidato - ENEM</strong></h1></header>
+    <div class="container">
+        <h2 class="titulo">Login</h2>
+
+        <div class="email-login">
+            <label for="email-login">Email</label>
+            <input type="text" id="email-login" placeholder="exemplo@gmail.com" required>
+        </div>
+
+        <div class="senha-login">
+            <label for="senha-login">Senha</label>
+            <input type="password" id="senha-login" placeholder="Digite sua senha">
+        </div>
+
+        <button class="btn-login" onclick="validar()">Entrar</button>
+
+        <a href="cadastro.html">Cadastrar novo usuário</a>
+
+        <div id="error-login" class="error-message"><p class="error-resposta"></p></div>
+    </div>
+    <footer class="rodape">
+        <h2><strong>Direitos autorais</strong></h2>
+        <p><strong>© 2026 Nicolas Soares da Costa, aluno do 3ºDS da escola Clodoveu Barbosa</strong></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
