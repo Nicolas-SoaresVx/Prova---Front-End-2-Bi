@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header class="cabeca">
+        <h1><strong>Verificar Cursos</strong></h1>
+        <nav class="menu">
+            <li><a href="painel.html">Painel Principal</a></li>
+            <li><a href="cursos.html">Verificação de Cursos</a></li>
+            <li><a href="inscricao.html">Inscrição</a></li>
+            <li><a href="index.html">Sair</a></li>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <label for="selecione-area">Escolha uma área</label>
+            <select id="selecione-area">
+                <option value="Exatas">Exatas</option>
+                <option value="Humanas">Humanas</option>
+                <option value="Natureza">Natureza</option>
+                <option value="Linguagens">Linguagens</option>
+            </select>
+        </div>
+
+        <ul id="lista-curso"></ul>
+
+        <button class="btn-verificar" onclick="verificar()">Verificar</button>
+    </div>
+
+    <footer class="rodape">
+        <p><strong>© 2026 Nicolas Soares da Costa, aluno do 3ºDS da escola Clodoveu Barbosa</strong></p>
+    </footer>
+
+    <script src="script2.js"></script>
+</body>
+</html>
