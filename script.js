@@ -6,7 +6,7 @@ function validar(){
     if(email.includes("@gmail.com") && senha.length >= 8){
         alert("Email válido")
         error.innerText = " ";
-        window.location.href("painel.html")
+        window.location.href = "painel.html";
     }else{
         error.innerText = "E-mail inválido ou senha menor de 8 caracteres";
     }
